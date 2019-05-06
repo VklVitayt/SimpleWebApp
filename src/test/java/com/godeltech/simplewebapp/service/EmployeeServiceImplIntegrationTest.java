@@ -2,12 +2,10 @@ package com.godeltech.simplewebapp.service;
 
 
 import com.godeltech.simplewebapp.domain.Employee;
-import com.godeltech.simplewebapp.domain.enums.Gender;
 import com.godeltech.simplewebapp.repository.EmployeeRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -25,12 +23,12 @@ public class EmployeeServiceImplIntegrationTest {
     @MockBean
     private EmployeeRepository employeeRepository;
     @Before
-    public void setUp() {
-        Employee employee = new Employee(1L,"Igor","Kabushkov",4L,"developer",Gender.MALE,LocalDate.of(1998, 9, 8));
-
-        Mockito.when(employeeRepository.findByIdEmployee(employee.getIdDepartment()))
-                .thenReturn(employee);
-    }
+//    public void setUp() {
+//        Employee employee = new Employee(1L,"Igor","Kabushkov",4L,"developer",Gender.MALE,LocalDate.of(1998, 9, 8));
+//
+//        Mockito.when(employeeRepository.findByIdEmployee(employee.getIdDepartment()))
+//                .thenReturn(employee);
+//    }
     @Test
     public void whenValidId_thenEmployeeShouldBeFound() {
         Long id = 1L;

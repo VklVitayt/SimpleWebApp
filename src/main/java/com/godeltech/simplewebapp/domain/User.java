@@ -6,15 +6,13 @@ import javax.persistence.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
 @Entity
-@Table(name = "Employee")
-public class Employee {
-
+@Table(name = "User")
+public class User {
     @Id
-    @Column(name = "employee_id")
+    @Column(name = "user_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idEmployee;
+    private Long idUser;
 
     @Column(name = "first_name")
     @NonNull
@@ -24,13 +22,9 @@ public class Employee {
     @NonNull
     private String lastName;
 
-    @Column(name = "position")
-    @NonNull
-    private String position;
-
     @Column(name = "phone_number")
     @NonNull
-    private String phoneNumber;
+    private Integer phoneNumber;
 
     @Column(name = "login")
     @NonNull
