@@ -22,10 +22,6 @@ public class Card {
     @NonNull
     private Long number;
 
-    @Column(name = "last_name")
-    @NonNull
-    private String lastName;
-
     @Column(name = "validity")
     @NonNull
     private String validity;
@@ -34,9 +30,6 @@ public class Card {
     @NonNull
     private String ccv;
 
-    @Column(name = "login")
-    @NonNull
-    private String login;
 
     @Column(name = "owner_name")
     @NonNull
@@ -58,14 +51,6 @@ public class Card {
         this.number = number;
     }
 
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
     public String getValidity() {
         return validity;
     }
@@ -80,14 +65,6 @@ public class Card {
 
     public void setCcv(String ccv) {
         this.ccv = ccv;
-    }
-
-    public String getLogin() {
-        return login;
-    }
-
-    public void setLogin(String login) {
-        this.login = login;
     }
 
     public String getNameOwner() {

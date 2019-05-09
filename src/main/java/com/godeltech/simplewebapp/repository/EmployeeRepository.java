@@ -10,4 +10,4 @@ public interface EmployeeRepository extends JpaRepository<Employee, Long> {
         Employee findByIdEmployee(Long id);
 
         void deleteByIdEmployee(Long id);
-        }
+}

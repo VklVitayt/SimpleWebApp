@@ -19,10 +19,33 @@ public class Order {
     private Long idOrder;
 
     @Column(name = "order_description")
-    @NonNull
     private String orderDescription;
 
     @Column(name = "price_order")
     @NonNull
-    private String priceOrder;
+    private Long priceOrder;
+
+    public Long getIdOrder() {
+        return idOrder;
+    }
+
+    public void setIdOrder(Long idOrder) {
+        this.idOrder = idOrder;
+    }
+
+    public String getOrderDescription() {
+        return orderDescription;
+    }
+
+    public void setOrderDescription(String orderDescription) {
+        this.orderDescription = orderDescription;
+    }
+
+    public Long getPriceOrder() {
+        return priceOrder;
+    }
+
+    public void setPriceOrder(Long priceOrder) {
+        this.priceOrder = priceOrder;
+    }
 }
