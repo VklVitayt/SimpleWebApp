@@ -28,6 +28,16 @@ public class ProductApi {
         return productService.find(id);
     }
 
+    @GetMapping("/getProductByTitle/{title}")
+    private Product getProductByTitle(@PathVariable String title){
+        return productService.find(title);
+    }
+
+    @GetMapping("/getProductByFurnitureType/{type}")
+    private Product getProductByFurnitureType(@PathVariable String type){
+        return productService.find(type);
+    }
+
     @PostMapping("/postProduct")
     private void postProduct(@RequestBody Product product ){
         productService.save(product);

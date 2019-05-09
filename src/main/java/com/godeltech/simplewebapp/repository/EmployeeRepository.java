@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 
-    Employee findByIdEmployee(Long id);
+        Employee findByIdEmployee(Long id);
 
-    void deleteByIdEmployee(Long id);
-}
+        void deleteByIdEmployee(Long id);
+        }

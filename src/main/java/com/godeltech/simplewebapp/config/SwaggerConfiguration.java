@@ -1,6 +1,5 @@
 package com.godeltech.simplewebapp.config;
 
-import static com.google.common.collect.Lists.newArrayList;
 
 import com.google.common.base.Predicates;
 import java.util.Collections;

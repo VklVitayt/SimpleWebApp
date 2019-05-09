@@ -29,4 +29,44 @@ public class Product {
     @Column(name = "price")
     @NonNull
     private Integer price;
+
+    public Long getIdProduct() {
+        return idProduct;
+    }
+
+    public void setIdProduct(Long idProduct) {
+        this.idProduct = idProduct;
+    }
+
+    public String getFurnitureType() {
+        return furnitureType;
+    }
+
+    public void setFurnitureType(String furnitureType) {
+        this.furnitureType = furnitureType;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
+    }
+
+    public Integer getPrice() {
+        return price;
+    }
+
+    public void setPrice(Integer price) {
+        this.price = price;
+    }
 }
